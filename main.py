@@ -87,7 +87,7 @@ def stream_from_name(value=None, show_lyrics=False, no_cache=False,
     else:
         value = get_value(value, no_cache)
 
-    direct_to_play(value, show_lyrics, title)
+    direct_to_play(value, show_lyrics, title, 'local')
 
 
 def stream_from_url(url, show_lyrics=False, no_cache=False,
@@ -114,7 +114,7 @@ def stream_from_url(url, show_lyrics=False, no_cache=False,
     else:
         value = grab_link(result.url, title, no_cache)
 
-    direct_to_play(value, show_lyrics, title)
+    direct_to_play(value, show_lyrics, title, 'url')
 
 
 def stream_cache_all(cache):
