@@ -5,6 +5,7 @@ import os
 import subprocess
 from lyrics import search_lyricswikia
 from mpv import MPV
+import sys
 
 
 def exe(command):
@@ -55,7 +56,7 @@ def wait_for_choice(player):
             player.cycle('pause')
         elif chic == 'q':
             player.quit()
-            exit()
+            break
 
 
 def run_mpv_dir(directory):
