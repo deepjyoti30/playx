@@ -24,7 +24,10 @@ def direct_to_play(url, show_lyrics, title, type):
     """Direct the song to be played according to the play_type."""
     if show_lyrics:
         lyric = search_lyricswikia(title)
-        print("----\n{}\n----".format(lyric))
+        if lyric != "": 
+            print("----\n{}\n----".format(lyric))
+        else:
+            print("Lyrics wasn't found!")
 
     run_mpv(url, type)
 

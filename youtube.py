@@ -27,6 +27,7 @@ class YoutubeMetadata:
         print("Title: ", self.title)
         print("Duration: ", self.duration)
 
+
 def get_youtube_streams(url):
     """Get both audio & vidoe stream urls for youtube using youtube-dl.
 
