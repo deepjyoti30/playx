@@ -1,6 +1,4 @@
-
 #!/usr/bin/env python3
-
 """
     Main function for playx.
 """

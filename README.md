@@ -75,7 +75,14 @@ optional arguments:
 
 ```
 
-------------
+## Extras
+Want to play from a playlist? Try playxlist by the following command.
+
+```python playxlist [playlist-file]```
+
+The playlist file can have any extension. Only Requirement is that every song should be on a newline.
+
+An example playlist is provided along.
 
 ## TO-DO
 - ~~caching of downloaded songs (if the song exists locally, play it right away else play from youtube)~~

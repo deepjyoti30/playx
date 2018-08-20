@@ -8,7 +8,6 @@ due to all those crawling shit
 
 from bs4 import BeautifulSoup
 import requests
-from stringutils import replace_space, replace_character
 from cache import Cache
 
 from utility import exe
@@ -44,11 +43,13 @@ def get_youtube_streams(url):
     url['video'] = stream_urls[0]
     return url
 
+
 def get_youtube_title(url):
     print("Getting title for :: {}".format(url))
     cli = "youtube-dl -e {}".format(url)
     output, error = exe(cli)
     return output
+
 
 def search_youtube(query):
     """Behold the greatest magic trick ever : crawl and crawl."""
@@ -89,9 +90,8 @@ def grab_link(value, title, no_cache):
 
 def main():
     """Run on program call."""
-    url = "https://www.youtube.com/watch?v=erywPdFfORE"
-    title = get_youtube_title(url)
-    urls = get_youtube_streams(url)
+    # url = "https://www.youtube.com/watch?v=erywPdFfORE"
+    pass
 
 
 if __name__ == "__main__":

@@ -15,6 +15,7 @@ class ManualError(Exception):
     def display(self):
         print(' '.join(self.args))
 
+
 def search_lyricswikia(query):
     print("Searching lyrics.wikia.com")
     query = remove_multiple_spaces(query).lower()
